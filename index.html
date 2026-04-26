@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CreditSense AI — ML-Powered Financial Leasing</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">CreditSense <span>AI</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="pages/domain.html">Domain</a></li>
+    <li><a href="pages/milestones.html">Milestones</a></li>
+    <li><a href="pages/documents.html">Documents</a></li>
+    <li><a href="pages/slides.html">Slides</a></li>
+    <li><a href="pages/about.html">About Us</a></li>
+    <li><a href="pages/contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="grid-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-badge">Research Project · SLIIT · 2025</div>
+    <h1>Transforming Financial Leasing with <em>Machine Learning</em></h1>
+    <p class="hero-sub">An integrated AI framework for intelligent risk assessment, branch performance analysis, ECL prediction, and conversational automation in financial leasing environments.</p>
+    <div class="hero-meta">
+      <div><strong>532,482</strong>Leasing Records</div>
+      <div><strong>99.98%</strong>Model Accuracy</div>
+      <div><strong>4</strong>Integrated Modules</div>
+      <div><strong>IFRS 9</strong>Compliant ECL</div>
+    </div>
+    <div class="hero-btns">
+      <a href="pages/domain.html" class="btn btn-primary">Explore Research →</a>
+      <a href="pages/documents.html" class="btn btn-outline">View Documents</a>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section>
+  <div class="container">
+    <span class="section-label fade-in">What We Built</span>
+    <h2 class="section-title fade-in">Four Integrated Modules</h2>
+    <p class="section-desc fade-in">Each module addresses a critical pain point in financial leasing operations — from predicting customer defaults to automating regulatory compliance.</p>
+    <div class="grid-2">
+      <div class="card fade-in">
+        <div class="card-icon">🎯</div>
+        <h3>Default Risk Prediction</h3>
+        <p>XGBoost-powered classification model trained on 188,866 leasing records to predict customer probability of default with 99.98% accuracy and 100% ROC-AUC.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">📊</div>
+        <h3>Branch Performance Analysis</h3>
+        <p>Clustering and binary classification ('Good'/'Poor') using arrears ratio, NPL status, and payment recency to surface underperforming branches proactively.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">💬</div>
+        <h3>RAG Conversational Assistant</h3>
+        <p>Retrieval-Augmented Generation chatbot with FAISS vector search, multimodal input (STT/TTS/OCR), and domain-specific leasing knowledge base.</p>
+      </div>
+      <div class="card fade-in">
+        <div class="card-icon">📈</div>
+        <h3>Impairment & ECL Estimation</h3>
+        <p>CatBoost regression achieving R² of 0.9886 for impairment and 0.9446 for 1-Year ECL, fully aligned with IFRS 9 accounting standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- KEY RESULTS -->
+<section style="background: var(--navy-mid); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <span class="section-label fade-in">Key Results</span>
+    <h2 class="section-title fade-in">Model Performance at a Glance</h2>
+    <div class="stats-row fade-in">
+      <div class="stat-pill"><span class="num">99.98%</span><span class="lbl">XGBoost Accuracy</span></div>
+      <div class="stat-pill"><span class="num">0.9886</span><span class="lbl">CatBoost R² (Impairment)</span></div>
+      <div class="stat-pill"><span class="num">100%</span><span class="lbl">ROC-AUC Score</span></div>
+      <div class="stat-pill"><span class="num">0.9446</span><span class="lbl">CatBoost R² (1-Yr ECL)</span></div>
+    </div>
+    <div class="card fade-in">
+      <table>
+        <thead>
+          <tr><th>Model</th><th>Task</th><th>Primary Metric</th><th>Score</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>XGBoost</td><td>Default Risk Prediction</td><td>Accuracy / ROC-AUC</td><td>99.98% / 100%</td></tr>
+          <tr><td>CatBoost</td><td>Impairment Estimation</td><td>R²</td><td>0.9886</td></tr>
+          <tr><td>CatBoost</td><td>1-Year ECL Prediction</td><td>R²</td><td>0.9446</td></tr>
+          <tr><td>XGBoost / RF</td><td>Branch Performance</td><td>F1-Score</td><td>—</td></tr>
+          <tr><td>FAISS + RAG</td><td>Conversational Assistant</td><td>Cosine Similarity Threshold</td><td>≥ 0.70</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- TECH STACK -->
+<section>
+  <div class="container">
+    <span class="section-label fade-in">Technology Stack</span>
+    <h2 class="section-title fade-in">Built With Modern Tools</h2>
+    <div class="grid-4 fade-in">
+      <div class="card"><div class="card-icon">🐍</div><h3>Python 3.9+</h3><p>Core language for all ML pipelines and backend logic.</p></div>
+      <div class="card"><div class="card-icon">⚡</div><h3>FastAPI</h3><p>RESTful API endpoints with Pydantic validation for all models.</p></div>
+      <div class="card"><div class="card-icon">🗄️</div><h3>Supabase</h3><p>PostgreSQL 15+ with row-level security and 3NF schema design.</p></div>
+      <div class="card"><div class="card-icon">🔍</div><h3>FAISS</h3><p>Vector storage powering 384-dim embeddings for RAG retrieval.</p></div>
+      <div class="card"><div class="card-icon">🚀</div><h3>XGBoost / CatBoost</h3><p>Primary ensemble models for classification and regression tasks.</p></div>
+      <div class="card"><div class="card-icon">🌐</div><h3>Next.js 14+</h3><p>React-based frontend with interactive dashboards and API calls.</p></div>
+      <div class="card"><div class="card-icon">🤖</div><h3>sentence-transformers</h3><p>384-dimensional embeddings for the RAG knowledge base.</p></div>
+      <div class="card"><div class="card-icon">📦</div><h3>scikit-learn</h3><p>Feature engineering, scaling, cross-validation pipelines.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 <strong>CreditSense AI Research Group</strong> · Sri Lanka Institute of Information Technology · Department of Information Technology</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

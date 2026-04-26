@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slides — CreditSense AI</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <style>
+    .slides-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .slide-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .slide-card:hover { border-color: var(--teal-mid); transform: translateY(-4px); }
+    .slide-thumb {
+      height: 160px;
+      background: var(--navy-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .slide-info { padding: 1.25rem; }
+    .slide-info h3 { font-family: var(--font-display); font-size: 0.95rem; font-weight: 700; margin-bottom: 0.35rem; }
+    .slide-info p { font-size: 0.8rem; color: var(--muted); margin-bottom: 1rem; }
+    .slide-actions { display: flex; align-items: center; justify-content: space-between; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="nav-logo">CreditSense <span>AI</span></a>
+  <ul class="nav-links">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="domain.html">Domain</a></li>
+    <li><a href="milestones.html">Milestones</a></li>
+    <li><a href="documents.html">Documents</a></li>
+    <li><a href="slides.html" class="active">Slides</a></li>
+    <li><a href="about.html">About Us</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="page-header">
+  <span class="section-label">Presentations</span>
+  <h1>Presentation Slides</h1>
+  <p>Slides used in past and upcoming presentations. Download or view each deck below.</p>
+</div>
+
+<div class="container" style="padding-bottom: 6rem;">
+  <div class="slides-grid">
+
+    <div class="slide-card fade-in">
+      <div class="slide-thumb">📋</div>
+      <div class="slide-info">
+        <h3>Proposal Presentation</h3>
+        <p>Initial project pitch — problem statement, objectives, and proposed methodology overview.</p>
+        <div class="slide-actions">
+          <span class="badge badge-done">Available</span>
+          <a href="../assets/slides/proposal-presentation.pptx" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.8rem;">Download →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card fade-in">
+      <div class="slide-thumb">📊</div>
+      <div class="slide-info">
+        <h3>Progress Presentation 1</h3>
+        <p>Data preprocessing pipeline, feature engineering, and early model training results.</p>
+        <div class="slide-actions">
+          <span class="badge badge-done">Available</span>
+          <a href="../assets/slides/progress-presentation-1.pptx" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.8rem;">Download →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card fade-in">
+      <div class="slide-thumb">📈</div>
+      <div class="slide-info">
+        <h3>Progress Presentation 2</h3>
+        <p>Full module development, model performance comparisons, and system integration update.</p>
+        <div class="slide-actions">
+          <span class="badge badge-done">Available</span>
+          <a href="../assets/slides/progress-presentation-2.pptx" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.8rem;">Download →</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="slide-card fade-in">
+      <div class="slide-thumb">🏆</div>
+      <div class="slide-info">
+        <h3>Final Presentation</h3>
+        <p>Complete system demonstration, results, conclusions, and future work recommendations.</p>
+        <div class="slide-actions">
+          <span class="badge badge-pending">Pending</span>
+          <span style="font-size:0.78rem;color:var(--muted);">Coming soon</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 <strong>CreditSense AI Research Group</strong> · Sri Lanka Institute of Information Technology</p>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
